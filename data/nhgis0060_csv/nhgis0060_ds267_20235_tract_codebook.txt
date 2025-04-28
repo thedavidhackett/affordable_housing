@@ -1,0 +1,255 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0060_ds267_20235_tract'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2019-2023
+Geographic level: Census Tract (by State--County)
+Extent:           Illinois
+Dataset:          2023 American Community Survey: 5-Year Data [2019-2023, Block Groups & Larger Areas]
+   NHGIS code:    2019_2023_ACS5a
+   NHGIS ID:      ds267
+Breakdown(s):     Geographic Component:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Race
+   Universe:    Total population
+   Source code: B02001
+   NHGIS code:  ASN2
+ 
+2. Median Household Income in the Past 12 Months (in 2023 Inflation-Adjusted Dollars)
+   Universe:    Households
+   Source code: B19013
+   NHGIS code:  ASQP
+ 
+3. Median Gross Rent (Dollars)
+   Universe:    Renter-occupied housing units paying cash rent
+   Source code: B25064
+   NHGIS code:  ASVB
+ 
+4. Gross Rent as a Percentage of Household Income in the Past 12 Months
+   Universe:    Renter-occupied housing units
+   Source code: B25070
+   NHGIS code:  ASVH
+ 
+5. Median Value (Dollars)
+   Universe:    Owner-occupied housing units
+   Source code: B25077
+   NHGIS code:  ASVN
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        STUSAB:      State Postal Abbreviation
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTY:      County Name
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place/Remainder Code
+        TRACTA:      Census Tract Code
+        BLKGRPA:     Block Group Code
+        CONCITA:     Consolidated City Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        RES_ONLYA:   American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+        TRUSTA:      American Indian Area (Off-Reservation Trust Land Only)/Hawaiian Home Land Code
+        AIHHTLI:     American Indian/Hawaiian Home Land Trust Land Indicator
+        AITSA:       Tribal Subdivision/Remainder Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        CNECTA:      New England City and Town Combined Statistical Area
+        NECTADIV:    New England City and Town Area Division
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (2023-2025, 118th Congress) Code
+        SLDUA:       State Legislative District (Upper Chamber) Code
+        SLDLA:       State Legislative District (Lower Chamber) Code
+        ZCTA5A:      5-Digit ZIP Code Tabulation Area Code
+        SUBMCDA:     Subminor Civil Division Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PCI:         Principal City Indicator
+        PUMAA:       Public Use Microdata Area Code
+        GEO_ID:      Census Geographic Area Identifier
+        BTTRA:       Tribal Census Tract Code
+        BTBGA:       Tribal Block Group Code
+        TL_GEO_ID:   TIGER/Line Shapefile Geographic Area Identifier
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Race
+    Universe:    Total population
+    Source code: B02001
+    NHGIS code:  ASN2
+        ASN2E001:    Total
+        ASN2E002:    White alone
+        ASN2E003:    Black or African American alone
+        ASN2E004:    American Indian and Alaska Native alone
+        ASN2E005:    Asian alone
+        ASN2E006:    Native Hawaiian and Other Pacific Islander alone
+        ASN2E007:    Some Other Race alone
+        ASN2E008:    Two or More Races
+        ASN2E009:    Two or More Races: Two races including Some Other Race
+        ASN2E010:    Two or More Races: Two races excluding Some Other Race, and three or more races
+ 
+    Table 2:     Median Household Income in the Past 12 Months (in 2023 Inflation-Adjusted Dollars)
+    Universe:    Households
+    Source code: B19013
+    NHGIS code:  ASQP
+        ASQPE001:    Median household income in the past 12 months (in 2023 inflation-adjusted dollars)
+ 
+    Table 3:     Median Gross Rent (Dollars)
+    Universe:    Renter-occupied housing units paying cash rent
+    Source code: B25064
+    NHGIS code:  ASVB
+        ASVBE001:    Median gross rent
+ 
+    Table 4:     Gross Rent as a Percentage of Household Income in the Past 12 Months
+    Universe:    Renter-occupied housing units
+    Source code: B25070
+    NHGIS code:  ASVH
+        ASVHE001:    Total
+        ASVHE002:    Less than 10.0 percent
+        ASVHE003:    10.0 to 14.9 percent
+        ASVHE004:    15.0 to 19.9 percent
+        ASVHE005:    20.0 to 24.9 percent
+        ASVHE006:    25.0 to 29.9 percent
+        ASVHE007:    30.0 to 34.9 percent
+        ASVHE008:    35.0 to 39.9 percent
+        ASVHE009:    40.0 to 49.9 percent
+        ASVHE010:    50.0 percent or more
+        ASVHE011:    Not computed
+ 
+    Table 5:     Median Value (Dollars)
+    Universe:    Owner-occupied housing units
+    Source code: B25077
+    NHGIS code:  ASVN
+        ASVNE001:    Median value (dollars)
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Race
+    Universe:    Total population
+    Source code: B02001
+    NHGIS code:  ASN2
+        ASN2M001:    Total
+        ASN2M002:    White alone
+        ASN2M003:    Black or African American alone
+        ASN2M004:    American Indian and Alaska Native alone
+        ASN2M005:    Asian alone
+        ASN2M006:    Native Hawaiian and Other Pacific Islander alone
+        ASN2M007:    Some Other Race alone
+        ASN2M008:    Two or More Races
+        ASN2M009:    Two or More Races: Two races including Some Other Race
+        ASN2M010:    Two or More Races: Two races excluding Some Other Race, and three or more races
+ 
+    Table 2:     Median Household Income in the Past 12 Months (in 2023 Inflation-Adjusted Dollars)
+    Universe:    Households
+    Source code: B19013
+    NHGIS code:  ASQP
+        ASQPM001:    Median household income in the past 12 months (in 2023 inflation-adjusted dollars)
+ 
+    Table 3:     Median Gross Rent (Dollars)
+    Universe:    Renter-occupied housing units paying cash rent
+    Source code: B25064
+    NHGIS code:  ASVB
+        ASVBM001:    Median gross rent
+ 
+    Table 4:     Gross Rent as a Percentage of Household Income in the Past 12 Months
+    Universe:    Renter-occupied housing units
+    Source code: B25070
+    NHGIS code:  ASVH
+        ASVHM001:    Total
+        ASVHM002:    Less than 10.0 percent
+        ASVHM003:    10.0 to 14.9 percent
+        ASVHM004:    15.0 to 19.9 percent
+        ASVHM005:    20.0 to 24.9 percent
+        ASVHM006:    25.0 to 29.9 percent
+        ASVHM007:    30.0 to 34.9 percent
+        ASVHM008:    35.0 to 39.9 percent
+        ASVHM009:    40.0 to 49.9 percent
+        ASVHM010:    50.0 percent or more
+        ASVHM011:    Not computed
+ 
+    Table 5:     Median Value (Dollars)
+    Universe:    Owner-occupied housing units
+    Source code: B25077
+    NHGIS code:  ASVN
+        ASVNM001:    Median value (dollars)
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, Katherine Knowles, Tracy Kugler, Finn Roberts, and Steven Ruggles.
+        IPUMS National Historical Geographic Information System: Version 19.0 
+        [dataset]. Minneapolis, MN: IPUMS. 2024. 
+        http://doi.org/10.18128/D050.V19.0
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
