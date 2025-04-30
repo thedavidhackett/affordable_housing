@@ -1,5 +1,5 @@
 --------------------------------------------------------------------------------
-Codebook for NHGIS data file 'nhgis0060_ds267_20235_tract'
+Codebook for NHGIS data file 'nhgis0061_ds267_20235_tract'
 --------------------------------------------------------------------------------
  
 Contents
@@ -32,22 +32,27 @@ Tables:
    Source code: B02001
    NHGIS code:  ASN2
  
-2. Median Household Income in the Past 12 Months (in 2023 Inflation-Adjusted Dollars)
+2. Hispanic or Latino Origin by Race
+   Universe:    Total population
+   Source code: B03002
+   NHGIS code:  ASOA
+ 
+3. Median Household Income in the Past 12 Months (in 2023 Inflation-Adjusted Dollars)
    Universe:    Households
    Source code: B19013
    NHGIS code:  ASQP
  
-3. Median Gross Rent (Dollars)
+4. Median Gross Rent (Dollars)
    Universe:    Renter-occupied housing units paying cash rent
    Source code: B25064
    NHGIS code:  ASVB
  
-4. Gross Rent as a Percentage of Household Income in the Past 12 Months
+5. Gross Rent as a Percentage of Household Income in the Past 12 Months
    Universe:    Renter-occupied housing units
    Source code: B25070
    NHGIS code:  ASVH
  
-5. Median Value (Dollars)
+6. Median Value (Dollars)
    Universe:    Owner-occupied housing units
    Source code: B25077
    NHGIS code:  ASVN
@@ -118,19 +123,45 @@ Data Type (E):
         ASN2E009:    Two or More Races: Two races including Some Other Race
         ASN2E010:    Two or More Races: Two races excluding Some Other Race, and three or more races
  
-    Table 2:     Median Household Income in the Past 12 Months (in 2023 Inflation-Adjusted Dollars)
+    Table 2:     Hispanic or Latino Origin by Race
+    Universe:    Total population
+    Source code: B03002
+    NHGIS code:  ASOA
+        ASOAE001:    Total
+        ASOAE002:    Not Hispanic or Latino
+        ASOAE003:    Not Hispanic or Latino: White alone
+        ASOAE004:    Not Hispanic or Latino: Black or African American alone
+        ASOAE005:    Not Hispanic or Latino: American Indian and Alaska Native alone
+        ASOAE006:    Not Hispanic or Latino: Asian alone
+        ASOAE007:    Not Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone
+        ASOAE008:    Not Hispanic or Latino: Some other race alone
+        ASOAE009:    Not Hispanic or Latino: Two or more races
+        ASOAE010:    Not Hispanic or Latino: Two or more races: Two races including Some other race
+        ASOAE011:    Not Hispanic or Latino: Two or more races: Two races excluding Some other race, and three or more races
+        ASOAE012:    Hispanic or Latino
+        ASOAE013:    Hispanic or Latino: White alone
+        ASOAE014:    Hispanic or Latino: Black or African American alone
+        ASOAE015:    Hispanic or Latino: American Indian and Alaska Native alone
+        ASOAE016:    Hispanic or Latino: Asian alone
+        ASOAE017:    Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone
+        ASOAE018:    Hispanic or Latino: Some other race alone
+        ASOAE019:    Hispanic or Latino: Two or more races
+        ASOAE020:    Hispanic or Latino: Two or more races: Two races including Some other race
+        ASOAE021:    Hispanic or Latino: Two or more races: Two races excluding Some other race, and three or more races
+ 
+    Table 3:     Median Household Income in the Past 12 Months (in 2023 Inflation-Adjusted Dollars)
     Universe:    Households
     Source code: B19013
     NHGIS code:  ASQP
         ASQPE001:    Median household income in the past 12 months (in 2023 inflation-adjusted dollars)
  
-    Table 3:     Median Gross Rent (Dollars)
+    Table 4:     Median Gross Rent (Dollars)
     Universe:    Renter-occupied housing units paying cash rent
     Source code: B25064
     NHGIS code:  ASVB
         ASVBE001:    Median gross rent
  
-    Table 4:     Gross Rent as a Percentage of Household Income in the Past 12 Months
+    Table 5:     Gross Rent as a Percentage of Household Income in the Past 12 Months
     Universe:    Renter-occupied housing units
     Source code: B25070
     NHGIS code:  ASVH
@@ -146,7 +177,7 @@ Data Type (E):
         ASVHE010:    50.0 percent or more
         ASVHE011:    Not computed
  
-    Table 5:     Median Value (Dollars)
+    Table 6:     Median Value (Dollars)
     Universe:    Owner-occupied housing units
     Source code: B25077
     NHGIS code:  ASVN
@@ -172,19 +203,45 @@ Data Type (M):
         ASN2M009:    Two or More Races: Two races including Some Other Race
         ASN2M010:    Two or More Races: Two races excluding Some Other Race, and three or more races
  
-    Table 2:     Median Household Income in the Past 12 Months (in 2023 Inflation-Adjusted Dollars)
+    Table 2:     Hispanic or Latino Origin by Race
+    Universe:    Total population
+    Source code: B03002
+    NHGIS code:  ASOA
+        ASOAM001:    Total
+        ASOAM002:    Not Hispanic or Latino
+        ASOAM003:    Not Hispanic or Latino: White alone
+        ASOAM004:    Not Hispanic or Latino: Black or African American alone
+        ASOAM005:    Not Hispanic or Latino: American Indian and Alaska Native alone
+        ASOAM006:    Not Hispanic or Latino: Asian alone
+        ASOAM007:    Not Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone
+        ASOAM008:    Not Hispanic or Latino: Some other race alone
+        ASOAM009:    Not Hispanic or Latino: Two or more races
+        ASOAM010:    Not Hispanic or Latino: Two or more races: Two races including Some other race
+        ASOAM011:    Not Hispanic or Latino: Two or more races: Two races excluding Some other race, and three or more races
+        ASOAM012:    Hispanic or Latino
+        ASOAM013:    Hispanic or Latino: White alone
+        ASOAM014:    Hispanic or Latino: Black or African American alone
+        ASOAM015:    Hispanic or Latino: American Indian and Alaska Native alone
+        ASOAM016:    Hispanic or Latino: Asian alone
+        ASOAM017:    Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone
+        ASOAM018:    Hispanic or Latino: Some other race alone
+        ASOAM019:    Hispanic or Latino: Two or more races
+        ASOAM020:    Hispanic or Latino: Two or more races: Two races including Some other race
+        ASOAM021:    Hispanic or Latino: Two or more races: Two races excluding Some other race, and three or more races
+ 
+    Table 3:     Median Household Income in the Past 12 Months (in 2023 Inflation-Adjusted Dollars)
     Universe:    Households
     Source code: B19013
     NHGIS code:  ASQP
         ASQPM001:    Median household income in the past 12 months (in 2023 inflation-adjusted dollars)
  
-    Table 3:     Median Gross Rent (Dollars)
+    Table 4:     Median Gross Rent (Dollars)
     Universe:    Renter-occupied housing units paying cash rent
     Source code: B25064
     NHGIS code:  ASVB
         ASVBM001:    Median gross rent
  
-    Table 4:     Gross Rent as a Percentage of Household Income in the Past 12 Months
+    Table 5:     Gross Rent as a Percentage of Household Income in the Past 12 Months
     Universe:    Renter-occupied housing units
     Source code: B25070
     NHGIS code:  ASVH
@@ -200,7 +257,7 @@ Data Type (M):
         ASVHM010:    50.0 percent or more
         ASVHM011:    Not computed
  
-    Table 5:     Median Value (Dollars)
+    Table 6:     Median Value (Dollars)
     Universe:    Owner-occupied housing units
     Source code: B25077
     NHGIS code:  ASVN
