@@ -1,6 +1,6 @@
-import pandas as pd
 import geopandas as gpd
 import numpy as np
+import pandas as pd
 
 GLOBAL_CRS = 'EPSG:3435'
 
@@ -8,7 +8,8 @@ census_map = {
     'ASN2E001': 'total_pop',
     'ASQPE001': 'median_income',
     'ASVNE001': 'median_home_value',
-    'ASVBE001': 'median_rent',  
+    'ASVBE001': 'median_rent', 
+    'ASOAE003': 'white' 
 }
 
 def main():
@@ -16,7 +17,7 @@ def main():
     cook_tracts = gpd.read_file('data/cook_county_tract_2023').to_crs(GLOBAL_CRS)
     chicago_border = gpd.read_file('data/City_Boundary_20250427.geojson').to_crs(GLOBAL_CRS)
     census_raw = pd.read_csv(
-        'data/nhgis0060_csv/nhgis0060_ds267_20235_tract.csv',
+        'data/nhgis0061_csv/nhgis0061_ds267_20235_tract.csv',
         usecols=['GISJOIN'] + list(census_map.keys())
     )
 
@@ -36,6 +37,8 @@ def main():
         -666666666, 
         np.nan
     )
+
+    census['share_white'] = census.white / census.total_pop
 
     chi_tracts_with_census_data = chi_tracts.merge(census, how='left', on='GISJOIN')
 
@@ -64,6 +67,7 @@ def main():
         'GISJOIN', 
         'geometry',
         'total_pop', 
+        'share_white',
         'median_income', 
         'median_rent', 
         'median_home_value', 
